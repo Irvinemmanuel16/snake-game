@@ -1,3 +1,5 @@
+import '../styles/index.scss';
+
 let canvas, ctx, juego;
 let defaultTailSize = 3;
 let tailSize = defaultTailSize;
@@ -9,6 +11,7 @@ let [appleX, appleY] = Array(2).fill(15);
 
 const btn = document.createElement('button');
 const para = document.getElementById('para');
+const div = document.querySelector('.container')
 
 
 window.onload = () => {
@@ -97,4 +100,5 @@ function keyupEvent(e){
   }
 }
 
-document.body.append(btn);
+div.append(btn);
+document.body.append(div);
